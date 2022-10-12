@@ -1,8 +1,8 @@
 SHELL = /bin/bash
 
-CC      = gcc
-CFLAGS  = -O3 -finline-functions -funroll-loops -Wall
-LDFLAGS = -lm
+CC      ?= gcc
+CFLAGS  ?= -O3 -finline-functions -funroll-loops -Wall
+LDFLAGS ?= -lm
 prefix  = /usr/local
 
 all: FastTree FastTreeDbl FastTreeMP FastTreeDblMP
